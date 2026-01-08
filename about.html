@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="main">
+      <!-- MENU -->
+      <div
+        id="menu"
+        class="w-full h-screen bg-blue-500 fixed top-0 left-0 z-50 flex justify-between overflow-hidden translate-x-full opacity-0 transition-all duration-500 ease-in-out"
+      >
+        <div class="w-[55%] overflow-hidden hidden sm:block">
+          <img
+            src="./assets/images/menuleftimg.png"
+            alt=""
+            class="w-full h-full object-center object-cover"
+          />
+        </div>
+        <div
+          class="w-full sm:w-[45%] bg-[#060B0F] relative px-6 sm:px-12 pt-8 sm:pt-12"
+        >
+          <img
+            src="./assets/svg/menuelips1.svg"
+            alt=""
+            class="absolute w-auto top-0 -left-1/2"
+          />
+          <img
+            src="./assets/svg/menuelips-2.svg"
+            alt=""
+            class="w-full h-full absolute bottom-0 right-0"
+          />
+          <div
+            class="relative w-full h-full flex flex-col justify-start items-start gap-12 sm:gap-16"
+          >
+            <div class="w-full flex justify-between items-center">
+              <img src="./assets/images/logo.png" alt="" class="w-32 sm:w-40" />
+              <button
+                id="menuBtnClose"
+                class="px-3 py-1 flex justify-between items-center Mont font-bold text-sm sm:text-base gap-1 rounded-full bg-white hover:bg-black hover:text-[#D7B44E] hover:shadow-2xl transition duration-200"
+              >
+                Close
+                <img src="./assets/svg/traingle.svg" alt="" class="w-5" />
+              </button>
+            </div>
+            <div
+              class="flex flex-col justify-start items-start gap-5 sm:gap-8 max-sm:px-4"
+            >
+              <a
+                href="./home.html"
+                class="flex justify-start gap-2 items-center Mont font-light text-[1.7rem] sm:text-3xl text-white transition-all duration-150 border-b border-transparent hover:border-b-white"
+              >
+                Home
+              </a>
+              <a
+                href="./about.html"
+                class="flex justify-start gap-2 items-center Mont font-extrabold text-[1.7rem] sm:text-3xl text-white"
+              >
+                <img
+                  class="w-5 sm:w-9"
+                  src="./assets/svg/menuTriangle.svg"
+                  alt=""
+                />
+                About Us
+              </a>
+              <a
+                href="./services.html"
+                class="flex justify-start gap-2 items-center Mont font-light text-[1.7rem] sm:text-3xl text-white transition-all duration-150 border-b border-transparent hover:border-b-white"
+              >
+                Services
+              </a>
+              <a
+                href="./gallery.html"
+                class="flex justify-start gap-2 items-center Mont font-light text-[1.7rem] sm:text-3xl text-white transition-all duration-150 border-b border-transparent hover:border-b-white"
+              >
+                Gallery
+              </a>
+              <a
+                href="./contact.html"
+                class="flex justify-start gap-2 items-center Mont font-light text-[1.7rem] sm:text-3xl text-white transition-all duration-150 border-b border-transparent hover:border-b-white"
+              >
+                Contact Us
+              </a>
+              <button
+                class="sm:hidden w-fit px-8 py-4 sm:py-2 flex justify-center sm:justify-between items-center Mont font-normal text-base gap-4 sm:gap-2 rounded-full bg-[#fce386] text-[#060B0F] border-none"
+              >
+                Get a Free Quote
+                <img src="./assets/svg/arrowUpRight.svg" alt="" class="w-3" />
+              </button>
+              <button
+                class="sm:hidden w-fit px-8 py-4 sm:py-2 flex justify-center sm:justify-between items-center Mont font-normal text-base gap-4 sm:gap-2 rounded-full bg-none text-white border border-[#FCE386]"
+              >
+                Book an Appointment
+                <img src="./assets/svg/arrowRight.svg" alt="" class="w-3" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- PAGE 1 -->
+      <div
+        class="page-1 w-full min-h-screen bg-[#F1D164] relative z-[0] overflow-hidden"
+      >
+        <div
+          class="w-auto h-auto absolute top-0 left-0 z-[50] pointer-events-none"
+        >
+          <img src="./assets/svg/elipsHeroTop.svg" alt="" />
+        </div>
+        <div
+          class="w-full h-full absolute top-0 left-0 z-[10] pointer-events-none"
+        >
+          <img
+            src="./assets/images/heroBgSplash.png"
+            alt=""
+            class="w-full h-full object-top object-cover"
+          />
+        </div>
+        <div
+          class="part-1 w-full h-auto flex max-sm:flex-col relative pt-4 px-2 sm:p-10 sm:!pr-0"
+        >
+          <div
+            class="w-full h-[95%] sm:h-full opacity-[0.84] absolute bg-black top-0 left-0 pointer-events-none z-[-1] pointer-events-none"
+          ></div>
+          <div
+            class="w-80 h-auto absolute -bottom-40 -right-5 pointer-events-none"
+          >
+            <img src="./assets/svg/elipshero-2.svg" alt="" />
+          </div>
+          <div
+            class="w-full sm:w-1/2 px-4 sm:px-6 flex flex-col gap-8 sm:gap-12 relative z-[50]"
+          >
+            <div class="flex justify-between items-center animate-header">
+              <img src="./assets/images/logo.png" alt="" class="w-28 sm:w-40" />
+              <button
+                id="menuBtn"
+                class="px-3 py-1 flex justify-between items-center Mont font-bold text-sm sm:text-base gap-1 rounded-full bg-white transition duration-200 hover:bg-black hover:text-[#D7B44E] hover:shadow-2xl"
+              >
+                Menu
+                <img src="./assets/svg/traingle.svg" alt="" class="w-5" />
+              </button>
+            </div>
+            <div class="flex flex-col justify-start items-start gap-5 pb-10">
+              <h1
+                class="Alt font-bold text-6xl text-[#F1D164] leading-none hidden sm:block animate-hero-title"
+              >
+                Trusted Renovation <br />
+                Experts in<br />
+                Austin
+              </h1>
+              <h1
+                class="Alt font-bold text-4xl text-[#F1D164] leading-none sm:hidden text-center animate-hero-title"
+              >
+                Trusted Renovation Experts in Austin
+              </h1>
+              <p class="Mont text-xl font-semibold text-white hidden sm:block animate-hero-subtitle">
+                Delivering top-tier residential and commercial upgrades <br />
+                with precision, care, and reliability.
+              </p>
+              <p
+                class="Mont text-sm font-semibold text-white sm:hidden text-center"
+              >
+                Delivering top-tier residential and commercial upgrades with
+                precision, care, and reliability.
+              </p>
+
+              <div
+                class="w-full flex flex-col justify-start items-center sm:items-start gap-2 sm:gap-4"
+              >
+                <p
+                  class="sm:w-full w-[80%] flex justify-center sm:justify-start items-center gap-2 Mont text-sm sm:text-base font-semibold text-white italic"
+                >
+                  <img
+                    src="./assets/svg/traingle.svg"
+                    alt=""
+                    class="w-5 sm:w-6"
+                  />Residential & Commercial
+                </p>
+
+                <p
+                  class="sm:w-full w-[80%] flex justify-center sm:justify-start items-center gap-2 Mont text-sm sm:text-base font-semibold text-white italic"
+                >
+                  <img
+                    src="./assets/svg/traingle.svg"
+                    alt=""
+                    class="w-5 sm:w-6"
+                  />Superior Quality
+                </p>
+
+                <p
+                  class="sm:w-full w-[80%] flex justify-center sm:justify-start items-center gap-2 Mont text-sm sm:text-base font-semibold text-white italic"
+                >
+                  <img
+                    src="./assets/svg/traingle.svg"
+                    alt=""
+                    class="w-5 sm:w-6"
+                  />Timely Completion
+                </p>
+              </div>
+
+              <p
+                class="Mont text-sm font-semibold text-white hidden sm:block italic"
+              >
+                We bring years of experience to every project,
+                <br />
+                ensuring a clean process and durable results that truly elevate
+                your<br />
+                property's value and style.
+              </p>
+              <p
+                class="Mont text-xs font-semibold text-white sm:hidden text-center italic"
+              >
+                We bring years of experience to every project, ensuring a clean
+                process and durable results that truly elevate your property's
+                value and style.
+              </p>
+
+              <div
+                class="w-full max-sm:flex-col flex justify-start items-center gap-6 sm:gap-4 animate-hero-buttons"
+              >
+                <button
+                  class="max-sm:w-72 px-5 py-3 sm:py-2 flex justify-center sm:justify-between items-center Mont font-normal text-sm sm:text-base gap-4 sm:gap-2 rounded-full bg-[#fce386] text-[#060B0F] border-none transition duration-150 hover:bg-black hover:text-[#D7B44E]"
+                >
+                  Get a Free Quote
+                  <img src="./assets/svg/arrowUpRight.svg" alt="" class="w-3" />
+                </button>
+                <button
+                  class="max-sm:w-72 px-5 py-3 sm:py-2 flex justify-center sm:justify-between items-center Mont font-normal text-sm sm:text-base gap-4 sm:gap-2 rounded-full bg-none text-white border border-[#FCE386] hover:border-transparent hover:bg-black hover:text-[#FCE386] transition duration-150"
+                >
+                  Book an Appointment
+                  <img src="./assets/svg/arrowRight.svg" alt="" class="w-3" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full sm:w-1/2 sm:pl-5 flex max-sm:pt-5 justify-center sm:justify-end relative z-[50]"
+          >
+            <div
+              class="relative w-[85%] sm:w-full h-[70dvh] sm:h-[110%] max-sm:rounded-2xl sm:rounded-tl-3xl sm:rounded-bl-3xl max-sm:rounded-2xl sm:rounded-tr-0 sm:rounded-br-0 overflow-hidden max-sm:justify-center
+              animate-rotate-door-right"
+            >
+              <img
+                src="./assets/images/serviceherobg.png"
+                class="relative sm:absolute inset-0 w-full h-full object-cover"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="part-2 w-full min-h-screen flex max-sm:flex-col relative px-4 sm:p-10 pt-20 sm:pt-36 max-sm:-mt-14 max-sm:pb-12"
+        >
+          <div
+            class="w-full h-full opacity-[0.55] absolute bg-black top-0 left-0 pointer-events-none z-[-1] pointer-events-none"
+          ></div>
+          <div
+            class="section2 w-full sm:flex gap-8 sm:gap-6 relative px-0 sm:px-6"
+          >
+            <!-- aboutleft -->
+            <div class="w-full h-fit sm:w-[69%] animate-about-image">
+              <!-- img -->
+              <div
+                class="flex flex-col justify-end items-start w-full h-full relative"
+              >
+                <img
+                  class="object-cover h-auto w-full rounded-2xl"
+                  src="./assets/images/Rectangle 8 (3).png"
+                  alt=""
+                />
+
+                <h1
+                  class="font-semibold text-[1.5rem] sm:text-[3rem] leading-[50px] text-white Alt text-center sm:text-start
+                   py-5 sm:py-0 sm:absolute bottom-0 hidden sm:block animate-about-title"
+                >
+                  Excellence in
+                  <span class="text-[#F1D164]">
+                    <br />
+                    Every Detail</span
+                  >
+                </h1>
+                <h1
+                  class="font-semibold text-[1.5rem] text-white Alt py-5 sm:hidden text-center w-full"
+                >
+                  Excellence in<br />
+                  <span class="text-[#F1D164]">Every Detail</span>
+                </h1>
+              </div>
+            </div>
+
+            <!-- aboutright -->
+            <div
+              class="w-full sm:w-[31%] h-full flex gap-8 sm:gap-4 flex-col justify-evenly animate-right"
+            >
+              <!-- content -->
+              <div class="w-full h-fit">
+                <h1
+                  class="text-white text-center sm:text-start Mont text-xs sm:text-sm font-light sm:w-[95%] sm:font-normal font-light 
+                  animate-about-content"
+                  style="line-height: inherit"
+                >
+                  From minor updates to major remodels, we prioritize integrity
+                  and craftsmanship in every job we undertake.
+                </h1>
+              </div>
+              <!-- points -->
+              <div
+                class="w-full h-fit pl-4 gap-2 sm:gap-1 flex flex-col items-center sm:items-start animate-stagger"
+              >
+                <div
+                  class="flex gap-2 w-[70%] sm:w-full justify-start items-center sm:items-start"
+                >
+                  <img
+                    class="w-4 sm:w-5"
+                    src="./assets/svg/Group 62.svg"
+                    alt=""
+                  />
+                  <h1
+                    class="text-white Mont font-medium sm:font-semibold text-sm sm:text-base italic"
+                  >
+                    Established local expertise
+                  </h1>
+                </div>
+                <div
+                  class="flex gap-2 w-[70%] sm:w-full justify-start items-center sm:items-start"
+                >
+                  <img
+                    class="w-4 sm:w-5"
+                    src="./assets/svg/Group 62.svg"
+                    alt=""
+                  />
+                  <h1
+                    class="text-white Mont font-medium sm:font-semibold text-sm sm:text-base italic"
+                  >
+                    Full residential services
+                  </h1>
+                </div>
+                <div
+                  class="flex gap-2 w-[70%] sm:w-full justify-start items-center sm:items-start"
+                >
+                  <img
+                    class="w-4 sm:w-5"
+                    src="./assets/svg/Group 62.svg"
+                    alt=""
+                  />
+                  <h1
+                    class="text-white Mont font-medium sm:font-semibold text-sm sm:text-base italic"
+                  >
+                    Commercial project expertise
+                  </h1>
+                </div>
+                <div
+                  class="flex gap-2 w-[70%] sm:w-full justify-start items-center sm:items-start"
+                >
+                  <img
+                    class="w-4 sm:w-5"
+                    src="./assets/svg/Group 62.svg"
+                    alt=""
+                  />
+                  <h1
+                    class="text-white Mont font-medium sm:font-semibold text-sm sm:text-base italic"
+                  >
+                    Uncompromising quality standards
+                  </h1>
+                </div>
+                <div
+                  class="flex gap-2 w-[70%] sm:w-full justify-start items-center sm:items-start"
+                >
+                  <img
+                    class="w-4 sm:w-5"
+                    src="./assets/svg/Group 62.svg"
+                    alt=""
+                  />
+                  <h1
+                    class="text-white Mont font-medium sm:font-semibold text-sm sm:text-base italic"
+                  >
+                    Punctual timeline management
+                  </h1>
+                </div>
+                <div
+                  class="flex gap-2 w-[70%] sm:w-full justify-start items-center sm:items-start"
+                >
+                  <img
+                    class="w-4 sm:w-5"
+                    src="./assets/svg/Group 62.svg"
+                    alt=""
+                  />
+                  <h1
+                    class="text-white Mont font-medium sm:font-semibold text-sm sm:text-base italic hidden sm:block"
+                  >
+                    Clean & safe work environment
+                  </h1>
+                  <h1
+                    class="text-white Mont font-medium sm:font-semibold text-sm sm:text-base italic sm:hidden"
+                  >
+                    Durable & lasting finishes
+                  </h1>
+                </div>
+              </div>
+              <!-- nechayimage -->
+              <div
+                class="h-fit w-full rounded-3xl overflow-hidden 
+                flex items-center justify-center sm:items-start
+                 sm:justify-start animate-scale"
+              >
+                <img class="" src="./assets/images/nechay.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- PAGE 2  -->
+      <div
+        class="page-2 w-full min-h-screen bg-[#F1D164] relative overflow-hidden"
+      >
+        <div
+          class="w-full h-full absolute top-0 left-0 z-[10] pointer-events-none"
+        >
+          <img
+            src="./assets/images/bgsplas-22.png"
+            alt=""
+            class="w-full h-full object-top object-cover"
+          />
+        </div>
+        <div class="part-1 w-full h-auto flex max-sm:flex-col relative z-[30]">
+          <div class="w-full h-fit sm:pl-10 py-8 sm:py-16 bg-white relative">
+            <div class="w-full h-fit sm:pl-10 py-10">
+              <div class="h-full w-full flex flex-col sm:flex-row">
+                <!-- Ourservicescontent -->
+                <div class="h-full w-full sm:w-[40%] px-3 sm:px-0">
+                  <h1 class="w-fit Alt font-bold text-[#220B0B] text-4xl mb-14 animate-left">
+                    Why Choose Delta <br />
+                    Renovations & Services?
+                  </h1>
+                  <!-- Service1 -->
+                  <div
+                    class="border-b-2 border-[#220B0B]/50 pb-5 flex flex-col gap-2
+                    animate-service-card"
+                  >
+                    <h1
+                      class="text-xl sm:text-3xl text-[#220B0B] font-semibold sm:font-bold Alt"
+                    >
+                      Free Estimates
+                    </h1>
+
+                    <p
+                      class="text-sm sm:text-base text-[#220B0B] Mont sm:w-[85%]"
+                    >
+                      We provide transparent, no-obligation quotes to help you
+                      plan your project confidently.
+                    </p>
+                  </div>
+
+                  <!-- Service2 -->
+                  <div
+                    class="border-b-2 border-[#220B0B]/50 pb-5 flex flex-col gap-2 pt-6 
+                    animate-service-card"
+                  >
+                    <h1
+                      class="text-xl sm:text-3xl text-[#220B0B] font-semibold sm:font-bold Alt"
+                    >
+                      Quality Materials
+                    </h1>
+
+                    <p
+                      class="text-sm sm:text-base text-[#220B0B] Mont sm:w-[85%]"
+                    >
+                      We utilize top-tier materials ensuring durability and
+                      superior finishes for every renovation.
+                    </p>
+                  </div>
+                  <!-- Service3 -->
+                  <div
+                    class="border-b-2 border-[#220B0B]/50 pb-5 flex flex-col gap-2 pt-6
+                    animate-service-card"
+                  >
+                    <h1
+                      class="text-xl sm:text-3xl text-[#220B0B] font-semibold sm:font-bold Alt"
+                    >
+                      Complete Service
+                    </h1>
+
+                    <p
+                      class="text-sm sm:text-base text-[#220B0B] Mont sm:w-[85%]"
+                    >
+                      E From residential to commercial needs, we handle every
+                      detail from start to finish.
+                    </p>
+                  </div>
+                  <!-- Service4 -->
+                  <div
+                    class="border-b-2 border-[#220B0B]/50 pb-5 flex flex-col gap-2 pt-6
+                    animate-service-card"
+                  >
+                    <h1
+                      class="text-xl sm:text-3xl text-[#220B0B] font-semibold sm:font-bold Alt"
+                    >
+                      Professionalism
+                    </h1>
+
+                    <p
+                      class="text-sm sm:text-base text-[#220B0B] Mont sm:w-[85%]"
+                    >
+                      Our team delivers expert results with respect for your
+                      time and property.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- ourservicesimages -->
+                <div
+                  class="sm:h-[100dvh] sm:w-[60%] gap-4 flex flex-col sm:ml-5 p-5 sm:p-0 mt-0 sm:mt-7
+                  animate-service-image"
+                >
+                  <div class="h-full w-full flex justify-between">
+                    <div
+                      class="w-full sm:w-[49%] h-full rounded-3xl overflow-hidden"
+                    >
+                      <img
+                        src="./assets/images/serve-1.png"
+                        alt=""
+                        class="w-full h-full"
+                      />
+                    </div>
+
+                    <div
+                      class="w-[49%] h-full overflow-hidden gap-5 sm:flex justify-between flex-col hidden"
+                    >
+                      <div class="h-[65%] w-full overflow-hidden">
+                        <img
+                          src="./assets/images/serve-2.png"
+                          alt=""
+                          class="w-full h-full rounded-tl-3xl rounded-bl-3xl"
+                        />
+                      </div>
+                      <div
+                        class="h-full w-full overflow-hidden flex justify-between"
+                      >
+                        <img
+                          class="w-[55%] rounded-3xl"
+                          src="/assets/images/serve-3.png"
+                          alt=""
+                        />
+                        <img
+                          class="w-[40%] rounded-tl-3xl rounded-bl-3xl"
+                          src="/assets/images/serve-4.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+
+        <div
+          class="part-2 w-full h-fit flex max-sm:flex-col relative py-6 sm:py-20"
+        >
+          <div
+            class="absolute inset-0 bg-black/80 z-[1] pointer-events-none"
+          ></div>
+          <div class="absolute bottom-0 right-72 z-[20] w-80 scale-[3]">
+            <img src="./assets/svg/elipsrightForm.svg" alt="" class="w-full" />
+          </div>
+          <div
+            class="flex justify-between items-start relative max-sm:flex-col max-sm:gap-16 relative z-[50]"
+          >
+            <div class="w-full sm:w-1/2 h-auto relative animate-form-image">
+              <img
+                src="./assets/images/quote.png"
+                alt=""
+                class="w-full object-cover"
+              />
+              <div class="absolute bottom-[-30%] sm:top-1/2 left-0">
+                <img
+                  src="./assets/images/chairShowcase.png"
+                  alt=""
+                  class="w-[60%] sm:w-[90%] max-sm:object-cover animate-chair-image"
+                />
+              </div>
+            </div>
+            <div
+              class="w-full sm:w-1/2 h-full px-2 sm:px-6 flex flex-col justify-start items-center gap-6 relative animate-form-container"
+            >
+              <h2
+                class="Alt font-bold text-2xl sm:text-4xl text-white animate-fade"
+              >
+                Get a <span class="text-[#F1D164]">quick quote!</span>
+              </h2>
+              <form
+                action=""
+                class="w-full flex flex-col gap-6 bg-black/40 border border-white rounded-lg sm:rounded-3xl py-8 px-2 sm:px-6 border-t-0 border-b-0"
+              >
+                <div
+                  class="max-sm:flex-col w-full flex justify-start sm:justify-between items-center gap-8 py-1"
+                >
+                  <input
+                    type="text"
+                    class="max-sm:text-sm w-full sm:w-1/2 Mont outline-none bg-transparent animate-form-input p-2 border-b border-white text-white placeholder:text-white"
+                    placeholder="Name"
+                  />
+                  <input
+                    type="Email"
+                    class="max-sm:text-sm w-full sm:w-1/2 Mont outline-none bg-transparent animate-form-input p-2 border-b border-white text-white placeholder:text-white"
+                    placeholder="Email"
+                  />
+                </div>
+                <div
+                  class="max-sm:flex-col w-full flex justify-start sm:justify-between items-center gap-8 py-1"
+                >
+                  <input
+                    type="text"
+                    class="max-sm:text-sm w-full sm:w-1/2 Mont outline-none bg-transparent animate-form-input p-2 border-b border-white text-white placeholder:text-white"
+                    placeholder="Phone"
+                  />
+                  <input
+                    type="text"
+                    class="max-sm:text-sm w-full sm:w-1/2 Mont outline-none bg-transparent animate-form-input p-2 border-b border-white text-white placeholder:text-white"
+                    placeholder="Project address"
+                  />
+                </div>
+                <div
+                  class="max-sm:flex-col w-full flex justify-start sm:justify-between items-center gap-8 py-1"
+                >
+                  <input
+                    type="text"
+                    class="max-sm:text-sm w-full sm:w-1/2 Mont outline-none bg-transparent animate-form-input p-2 border-b border-white text-white placeholder:text-white"
+                    placeholder="Service interested in"
+                  />
+                  <input
+                    type="text"
+                    class="max-sm:text-sm w-full sm:w-1/2 Mont outline-none bg-transparent animate-form-input p-2 border-b border-white text-white placeholder:text-white"
+                    placeholder="Preferred appointment date/time"
+                  />
+                </div>
+                <textarea
+                  name=""
+                  id=""
+                  rows="5"
+                  class="max-sm:text-sm w-full Mont outline-none bg-transparent p-2 border-b border-white text-white placeholder:text-white"
+                  placeholder="Brief description"
+                ></textarea>
+                <button
+                  class="w-fit px-5 py-2.5 flex justify-center sm:justify-between items-center Mont font-normal text-sm sm:text-base gap-4 sm:gap-2 rounded-full bg-[#fce386] text-[#060B0F] border-none mx-auto"
+                >
+                  Get a Quote
+                  <img src="./assets/svg/arrowUpRight.svg" alt="" class="w-3" />
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- PAGE 3  -->
+      <div
+        class="page-3 w-full min-h-screen bg-[#F1D164] relative overflow-hidden flex flex-col gap-20 pt-5 sm:pt-12"
+      >
+        <div
+          class="w-full h-full opacity-[0.60] absolute bg-black top-0 left-0 pointer-events-none z-[0] pointer-events-none"
+        ></div>
+        <div
+          class="w-full h-full absolute top-0 left-0 z-[10] pointer-events-none"
+        >
+          <img
+            src="./assets/images/heroBgSplash.png"
+            alt=""
+            class="w-full h-full object-top object-cover"
+          />
+        </div>
+
+        <!-- REVIEWS -->
+        <div class="w-full flex-col justify-start items-center relative">
+          <!-- section6 part 1-->
+          <div class="section6 w-full overflow-hidden relative z-[30]">
+            <div class="flex items-center gap-5 animate-marquee">
+              <!-- Card 1 -->
+              <div
+                class="bg-[#222222] h-full w-fit flex py-2 sm:pt-5 sm:pb-4 pl-3 pr-10 rounded-xl sm:rounded-3xl justify-center items-center shrink-0 gap-2"
+              >
+                <div
+                  class="h-14 w-14 sm:h-20 sm:w-20 rounded-full overflow-hidden"
+                >
+                  <img
+                    class="object-center"
+                    src="./assets/images/Rectangle 66.png"
+                    alt=""
+                  />
+                </div>
+                <div class="flex flex-col gap-4 sm:gap-8 pl-2">
+                  <p class="text-white text-sm sm:text-base">
+                    “Delta renovated our kitchen — on time, clean <br />, and
+                    the finish is flawless.”
+                  </p>
+                  <h1 class="text-white font-semibold text-sm sm:text-xl">
+                    — M. Ramirez, Austin
+                  </h1>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div
+                class="bg-[#222222] h-full w-fit flex py-2 sm:pt-5 sm:pb-4 pl-3 pr-10 rounded-xl sm:rounded-3xl justify-center items-center shrink-0 gap-2"
+              >
+                <div
+                  class="h-14 w-14 sm:h-20 sm:w-20 rounded-full overflow-hidden"
+                >
+                  <img
+                    class="object-center"
+                    src="./assets/images/Rectangle 58.png"
+                    alt=""
+                  />
+                </div>
+                <div class="flex flex-col gap-4 sm:gap-8 pl-2">
+                  <p class="text-white text-sm sm:text-base">
+                    “They transformed our master shower. <br />
+                    Professional and communicative.”
+                  </p>
+                  <h1 class="text-white font-semibold text-sm sm:text-xl">
+                    — S. Nguyen
+                  </h1>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div
+                class="bg-[#222222] h-full w-fit flex py-2 sm:pt-5 sm:pb-4 pl-3 pr-10 rounded-xl sm:rounded-3xl justify-center items-center shrink-0 gap-2"
+              >
+                <div
+                  class="h-14 w-14 sm:h-20 sm:w-20 rounded-full overflow-hidden"
+                >
+                  <img
+                    class="object-center"
+                    src="./assets/images/Rectangle 60.png"
+                    alt=""
+                  />
+                </div>
+                <div class="flex flex-col gap-4 sm:gap-8 pl-2">
+                  <p class="text-white text-sm sm:text-base">
+                    “Quick, neat, and fair pricing. Highly recommended <br />
+                    for commercial work.”
+                  </p>
+                  <h1 class="text-white font-semibold text-sm sm:text-xl">
+                    — TR Commercial
+                  </h1>
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div
+                class="bg-[#222222] h-full w-fit flex py-2 sm:pt-5 sm:pb-4 pl-3 pr-10 rounded-xl sm:rounded-3xl justify-center items-center shrink-0 gap-2"
+              >
+                <div
+                  class="h-14 w-14 sm:h-20 sm:w-20 rounded-full overflow-hidden"
+                >
+                  <img
+                    class="object-center"
+                    src="./assets/images/Rectangle 66.png"
+                    alt=""
+                  />
+                </div>
+                <div class="flex flex-col gap-4 sm:gap-8 pl-2">
+                  <p class="text-white text-sm sm:text-base">
+                    “Delta renovated our kitchen — on time, clean <br />, and
+                    the finish is flawless.”
+                  </p>
+                  <h1 class="text-white font-semibold text-sm sm:text-xl">
+                    — M. Ramirez, Austin
+                  </h1>
+                </div>
+              </div>
+              <!-- Card 5 -->
+              <div
+                class="bg-[#222222] h-full w-fit flex sm:pt-5 sm:pb-4 pl-3 pr-10 rounded-xl sm:rounded-3xl justify-center items-center shrink-0 gap-2"
+              >
+                <div
+                  class="h-14 w-14 sm:h-20 sm:w-20 rounded-full overflow-hidden"
+                >
+                  <img
+                    class="object-center"
+                    src="./assets/images/Rectangle 58.png"
+                    alt=""
+                  />
+                </div>
+                <div class="flex flex-col gap-4 sm:gap-8 pl-2">
+                  <p class="text-white text-sm sm:text-base">
+                    “They transformed our master shower. <br />
+                    Professional and communicative.”
+                  </p>
+                  <h1 class="text-white font-semibold text-sm sm:text-xl">
+                    — S. Nguyen
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- section6 part 2-->
+          <div
+            class="section6 w-full overflow-hidden relative z-[30] mt-5 sm:mt-10"
+          >
+            <div class="flex items-center gap-5 animate-marqueetwo">
+              <!-- Card 1 -->
+              <div
+                class="bg-[#222222] h-full w-fit flex py-2 sm:pt-5 sm:pb-4 pl-3 pr-10 rounded-xl sm:rounded-3xl justify-center items-center shrink-0 gap-2"
+              >
+                <div
+                  class="h-14 w-14 sm:h-20 sm:w-20 rounded-full overflow-hidden"
+                >
+                  <img
+                    class="object-center"
+                    src="./assets/images/Rectangle 66.png"
+                    alt=""
+                  />
+                </div>
+                <div class="flex flex-col gap-4 sm:gap-8 pl-2">
+                  <p class="text-white text-sm sm:text-base">
+                    “Delta renovated our kitchen — on time, clean <br />, and
+                    the finish is flawless.”
+                  </p>
+                  <h1 class="text-white font-semibold text-sm sm:text-xl">
+                    — M. Ramirez, Austin
+                  </h1>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div
+                class="bg-[#222222] h-full w-fit flex py-2 sm:pt-5 sm:pb-4 pl-3 pr-10 rounded-xl sm:rounded-3xl justify-center items-center shrink-0 gap-2"
+              >
+                <div
+                  class="h-14 w-14 sm:h-20 sm:w-20 rounded-full overflow-hidden"
+                >
+                  <img
+                    class="object-center"
+                    src="./assets/images/Rectangle 58.png"
+                    alt=""
+                  />
+                </div>
+                <div class="flex flex-col gap-4 sm:gap-8 pl-2">
+                  <p class="text-white text-sm sm:text-base">
+                    “They transformed our master shower. <br />
+                    Professional and communicative.”
+                  </p>
+                  <h1 class="text-white font-semibold text-sm sm:text-xl">
+                    — S. Nguyen
+                  </h1>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div
+                class="bg-[#222222] h-full w-fit flex py-2 sm:pt-5 sm:pb-4 pl-3 pr-10 rounded-xl sm:rounded-3xl justify-center items-center shrink-0 gap-2"
+              >
+                <div
+                  class="h-14 w-14 sm:h-20 sm:w-20 rounded-full overflow-hidden"
+                >
+                  <img
+                    class="object-center"
+                    src="./assets/images/Rectangle 60.png"
+                    alt=""
+                  />
+                </div>
+                <div class="flex flex-col gap-4 sm:gap-8 pl-2">
+                  <p class="text-white text-sm sm:text-base">
+                    “Quick, neat, and fair pricing. Highly recommended <br />
+                    for commercial work.”
+                  </p>
+                  <h1 class="text-white font-semibold text-sm sm:text-xl">
+                    — TR Commercial
+                  </h1>
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div
+                class="bg-[#222222] h-full w-fit flex py-2 sm:pt-5 sm:pb-4 pl-3 pr-10 rounded-xl sm:rounded-3xl justify-center items-center shrink-0 gap-2"
+              >
+                <div
+                  class="h-14 w-14 sm:h-20 sm:w-20 rounded-full overflow-hidden"
+                >
+                  <img
+                    class="object-center"
+                    src="./assets/images/Rectangle 66.png"
+                    alt=""
+                  />
+                </div>
+                <div class="flex flex-col gap-4 sm:gap-8 pl-2">
+                  <p class="text-white text-sm sm:text-base">
+                    “Delta renovated our kitchen — on time, clean <br />, and
+                    the finish is flawless.”
+                  </p>
+                  <h1 class="text-white font-semibold text-sm sm:text-xl">
+                    — M. Ramirez, Austin
+                  </h1>
+                </div>
+              </div>
+              <!-- Card 5 -->
+              <div
+                class="bg-[#222222] h-full w-fit flex py-2 sm:pt-5 sm:pb-4 pl-3 pr-10 rounded-xl sm:rounded-3xl justify-center items-center shrink-0 gap-2"
+              >
+                <div
+                  class="h-14 w-14 sm:h-20 sm:w-20 rounded-full overflow-hidden"
+                >
+                  <img
+                    class="object-center"
+                    src="./assets/images/Rectangle 58.png"
+                    alt=""
+                  />
+                </div>
+                <div class="flex flex-col gap-4 sm:gap-8 pl-2">
+                  <p class="text-white text-sm sm:text-base">
+                    “They transformed our master shower. <br />
+                    Professional and communicative.”
+                  </p>
+                  <h1 class="text-white font-semibold text-sm sm:text-xl">
+                    — S. Nguyen
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FOOTER -->
+        <div class="footer px-2 sm:px-10 relative z-[30] animate-footer">
+          <div class="bg-black h-fit w-full rounded-t-2xl pb-6 max-sm:px-4">
+            <div class="h-fit py-10 w-full sm:flex justify-between">
+              <div
+                class="h-full w-full sm:w-[37%] flex gap-5 flex-col justify-center items-center pt-5"
+              >
+                <img
+                  class="w-[60%]"
+                  src="./assets/images/Footerlogo.png"
+                  alt=""
+                />
+                <p
+                  class="text-xs sm:text-lg Mont text-center text-white w-full sm:w-[80%]"
+                >
+                  Full-service residential & commercial renovations in Austin,
+                  TX.
+                  <span class="text-[#F1D164] font-bold">Free estimates.</span>
+                </p>
+              </div>
+              <div
+                class="pt-8 sm:pt-14 h-full w-full sm:w-[20%] flex flex-col justify-center max-sm:items-center"
+              >
+                <h1 class="Mont font-black text-sm sm:text-xl text-white">
+                  Quick Links
+                </h1>
+                <p
+                  class="text-white Mont text-xs sm:text-lg cursor-pointer font-normal"
+                >
+                  <a href="./home.html">Home</a>
+                </p>
+                <p
+                  class="text-white Mont text-xs sm:text-lg cursor-pointer font-normal"
+                >
+                  <a href="./about.html">About Us</a>
+                </p>
+                <p
+                  class="text-white Mont text-xs sm:text-lg cursor-pointer font-normal"
+                >
+                  <a href="./services.html">Services</a>
+                </p>
+                <p
+                  class="text-white Mont text-xs sm:text-lg cursor-pointer font-normal"
+                >
+                  <a href="./gallery.html">Gallery</a>
+                </p>
+                <p
+                  class="text-white Mont text-xs sm:text-lg cursor-pointer font-normal"
+                >
+                  <a href="./contact.html">Contact</a>
+                </p>
+              </div>
+              <div
+                class="h-full pt-8 sm:pt-14 w-full sm:w-[25%] flex flex-col justify-center items-center sm:items-start gap-8 sm:gap-10"
+              >
+                <div class="flex flex-col gap-2">
+                  <div class="flex gap-2 items-center">
+                    <img
+                      class="w-[7%]"
+                      src="./assets/svg/phoneicon.svg"
+                      alt=""
+                    />
+                    <p class="text-white Mont uppercase sm:text-base text-xs">
+                      +64 2904305039
+                    </p>
+                  </div>
+                  <div class="flex gap-2 items-center">
+                    <img
+                      class="w-[7%]"
+                      src="./assets/svg/emailicon.svg"
+                      alt=""
+                    />
+                    <p class="text-white Mont sm:text-base text-xs">
+                      devoidservices@gmail.com
+                    </p>
+                  </div>
+                  <div class="flex gap-2 items-center">
+                    <img
+                      class="w-[7%]"
+                      src="./assets/svg/clockicon.svg"
+                      alt=""
+                    />
+                    <p class="text-white Mont uppercase sm:text-base text-xs">
+                      Mon–Fri 9:00am–6:00pm
+                    </p>
+                  </div>
+                </div>
+
+                <button
+                  class="w-fit px-4 py-2 sm:py-2 flex justify-center sm:justify-between items-center Mont font-normal text-base gap-4 sm:gap-2 rounded-full bg-[#fce386] text-[#060B0F] border-none"
+                >
+                  Get a Free Quote
+                  <img src="./assets/svg/arrowUpRight.svg" alt="" class="w-3" />
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col sm:flex-row sm:px-28 max-sm:items-center justify-between max-sm:gap-2"
+            >
+              <p class="text-white text-xs Mont">
+                Privacy Policy | Your Privacy Choices
+              </p>
+              <p class="text-white text-xs max-sm:text-center Mont">
+                © 2025 JMC CONSTRUCTION AND REMODELING . All Rights Reserved.
+                <span class="text-[#ECB373]">Web Developed </span>By Devoids
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+      integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

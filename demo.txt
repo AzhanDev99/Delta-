@@ -1,0 +1,39 @@
+// HERO SECTION
+" Alt font-bold text-[3.2rem] text-[#F1D164]" → ADD: animate-hero-title
+" Mont text-sm sm:text-xl font-semibold text-white" (under hero) → ADD: animate-hero-subtitle
+" w-full max-sm:flex-col flex justify-start items-center gap-6" (buttons container) → ADD: animate-hero-buttons
+" relative w-[85%] sm:w-[95%] rounded-3xl" (right hero image container) → ADD: animate-hero-image
+
+// ABOUT SECTION  
+" w-full sm:w-[68%] h-auto relative" (left image container) → ADD: animate-about-image
+" font-semibold text-[1.5rem] sm:text-[2.5rem] text-white Alt" → ADD: animate-about-title
+" text-white text-center sm:text-start Mont text-xs sm:text-sm" → ADD: animate-about-content
+
+// SERVICES SECTION
+" border-b-2 border-[#220B0B]/50 pb-5 flex flex-col gap-4" (har service card) → ADD: animate-service-card
+" w-full sm:w-[49%] h-full rounded-3xl" (service images) → ADD: animate-service-image
+" sm:h-[160dvh] sm:w-[55%] gap-4" (service images container ke andar har image) → ADD: animate-service-image
+
+// FORM SECTION
+" w-full sm:w-1/2 h-full px-2 sm:px-6" (form container) → ADD: animate-form-container
+"input, textarea" (form ke andar sab inputs) → ADD: animate-form-input
+" w-full sm:w-1/2 h-auto relative" (left quote image) → ADD: animate-form-image
+
+// CAROUSEL
+" carousel-wrapper" → ADD: animate-carousel
+" min-w-[260px]" (har carousel card) → ADD: animate-carousel-card
+
+// REVIEWS MARQUEE
+" section6  flex items-center gap-5" (pehli marquee) → ADD: animate-marquee
+" section6  flex items-center gap-5" (dusri marquee) → ADD: animate-marqueetwo
+
+// FOOTER
+" h-full w-full sm:w-[37%]" (footer logo section) → ADD: animate-footer-section
+" pt-8 sm:pt-14 h-full w-full sm:w-[20%]" (quick links) → ADD: animate-footer-section
+" h-full pt-8 sm:pt-14 w-full sm:w-[25%]" (contact info) → ADD: animate-footer-section
+
+// BUTTONS (saari buttons)
+"button" (sab buttons) → ADD: animate-magnetic-btn
+
+// MENU LINKS
+"a" (menu ke andar sab links) → ADD: animate-menu-link
